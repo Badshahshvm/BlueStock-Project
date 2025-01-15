@@ -13,6 +13,20 @@
         message:err.message})
     }
     }
+
+  const publishIpo=async(req,res)=>
+    {
+      try
+    {
+      
+    }
+    catch(err)
+    {
+      res.json({
+        success:false,
+        message:err.message})
+    }
+    }
 const upcommingIpo=async(req,res)=>
   {
 try
@@ -27,4 +41,4 @@ try
     }
   }
 
-module.exports={addIpo,upcommingIpo};
+module.exports={addIpo,upcommingIpo,publishIpo};
