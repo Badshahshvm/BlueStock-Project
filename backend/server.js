@@ -2,8 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const fileUpload = require("express-fileupload")
 require("dotenv").config();
-const userRoute = require("./route/user")
-const ipoRoute = require("./route/ipo")
+const userRoute = require("./routes/user")
+const ipoRoute = require("./routes/ipo")
 const app = express();
 mongoose.connect(process.env.MONGOURL).then(() => console.log("Connected To The databse")).catch((err) => console.log("not connected"))
 app.use(express.json())
